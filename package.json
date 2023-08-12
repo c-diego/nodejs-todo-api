@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "npx nodemon -e ts,json src/server.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["todo", "rest", "api", "typescript", "learning", "express"],
+  "author": "c-diego",
+  "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^20.4.10",
