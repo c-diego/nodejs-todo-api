@@ -14,23 +14,23 @@ PUT `/todo/:listid` -> Atualiza uma lista de tarefa
 
 ```json
 {
-  id: number,
-  taks: [
+  "id": 1,
+  "taks": [
     {
-      id: number,
-      task: string,
-      duration: number, // minutes
-      due-date: date
+      "id": 1,
+      "task": "description",
+      "duration": 60,
+      "due-date": 11082023
     }
   ]
 }
 ```
 
 ## Erro
-```
+```json
 {
-  error: string,
-  status: number
+  "error": "description",
+  "status": 500
 }
 ```
 
@@ -39,16 +39,16 @@ PUT `/todo/:listid` -> Atualiza uma lista de tarefa
 
 ```json
 {
-  taks: [
+  "taks": [
     {
-      task: "comprar ingredientes de bolo",
-      duration: 120,
-      due-date: 11082023
+      "task": "comprar ingredientes de bolo",
+      "duration": 120,
+      "due-date": 11082023
     },
     {
-      task: "fazer bolo de aniversário",
-      duration: 60,
-      due-date: 12082023
+      "task": "fazer bolo de aniversário",
+      "duration": 60,
+      "due-date": 12082023
     }
   ]
 }
@@ -58,19 +58,19 @@ PUT `/todo/:listid` -> Atualiza uma lista de tarefa
 
 ```json
 {
-  id: 1,
-  taks: [
+  "id": 1,
+  "taks": [
     {
-      id: 1,
-      task: "comprar ingredientes de bolo",
-      duration: 120,
-      due-date: 11082023
+      "id": 1,
+      "task": "comprar ingredientes de bolo",
+      "duration": 120,
+      "due-date": 11082023
     },
     {
-      id: 2,
-      task: "fazer bolo de aniversário",
-      duration: 60,
-      due-date: 12082023
+      "id": 2,
+      "task": "fazer bolo de aniversário",
+      "duration": 60,
+      "due-date": 12082023
     }
   ]
 }
@@ -81,19 +81,19 @@ PUT `/todo/:listid` -> Atualiza uma lista de tarefa
 
 ```json
 {
-  id: 1,
-  taks: [
+  "id": 1,
+  "taks": [
     {
-      id: 1,
-      task: "comprar ingredientes de bolo",
-      duration: 120,
-      due-date: 11082023
+      "id": 1,
+      "task": "comprar ingredientes de bolo",
+      "duration": 120,
+      "due-date": 11082023
     },
     {
-      id: 2,
-      task: "fazer bolo de aniversário",
-      duration: 60,
-      due-date: 12082023
+      "id": 2,
+      "task": "fazer bolo de aniversário",
+      "duration": 60,
+      "due-date": 12082023
     }
   ]
 }
@@ -105,19 +105,19 @@ PUT `/todo/:listid` -> Atualiza uma lista de tarefa
 
 ```json
 {
-  id: 1,
-  taks: [
+  "id": 1,
+  "taks": [
     {
-      id: 1,
-      task: "comprar ingredientes de bolo de aniversário",
-      duration: 120,
-      due-date: 11082023
+      "id": 1,
+      "task": "comprar ingredientes de bolo de aniversário",
+      "duration": 120,
+      "due-date": 11082023
     },
     {
-      id: 2,
-      task: "fazer bolo de aniversário",
-      duration: 60,
-      due-date: 12082023
+      "id": 2,
+      "task": "fazer bolo de aniversário",
+      "duration": 60,
+      "due-date": 12082023
     }
   ]
 }
