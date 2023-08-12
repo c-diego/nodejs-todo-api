@@ -1,28 +1,14 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import * as TodoController from '../controller/todoController';
 
 const router = Router();
 
-const requestHandler = ( req: Request, res: Response ) => {
-  let method = req.method;
-  let path = req.path;
-  let body = req.body;
-  let params = req.params;
-
-  res.json( {
-    method,
-    path,
-    body,
-    params
-  } );
-
-};
-
-router.get( '/todo', requestHandler );
-router.get( '/todo/date/:duedate', requestHandler );
-router.get( '/todo/:listid', requestHandler );
-router.get( '/todo/:listid/:taskid', requestHandler );
-router.delete( '/todo/:lisid', requestHandler );
-router.post( '/todo', requestHandler );
-router.put( '/todo/:listid', requestHandler );
+router.get( '/todo', TodoController.getAllTodoLists );
+router.get( '/todo/date/:duedate', TodoController.getTaskByDueDate );
+router.get( '/todo/:listid', TodoController.getListById );
+router.get( '/todo/:listid/:taskid', TodoController.finalizeTask );
+router.delete( '/todo/:listid', TodoController.removeList );
+router.post( '/todo', TodoController.createList );
+router.put( '/todo/:listid', TodoController.updateList );
 
 export default router;
