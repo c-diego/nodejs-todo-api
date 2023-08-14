@@ -1,14 +1,25 @@
-import { Router } from 'express';
-import * as TodoController from '../controller/todoController';
+import { Router, Request, Response } from 'express';
 
 const router = Router();
 
-router.get( '/todo', TodoController.getAllTodoLists );
-router.get( '/todo/date/:duedate', TodoController.getTaskByDueDate );
-router.get( '/todo/:listid', TodoController.getListById );
-router.get( '/todo/:listid/:taskid', TodoController.finalizeTask );
-router.delete( '/todo/:listid', TodoController.removeList );
-router.post( '/todo', TodoController.createList );
-router.put( '/todo/:listid', TodoController.updateList );
+const handler = ( req: Request, res: Response ) => {
+
+  res.json( {
+    error: 'Resource not found',
+    staus: 404,
+    path: req.path,
+    params: req.params,
+    body: req.body
+  } );
+
+};
+
+router.get( '/', handler );
+router.get( '/duedate/:duedate', handler );
+router.get( '/:task', handler );
+router.delete( '/:task', handler );
+router.post( '/', handler );
+router.put( '/:task', handler );
+router.put( '/:task/complete', handler );
 
 export default router;

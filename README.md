@@ -21,7 +21,7 @@ PUT `/api/tasks/:task` -> Atualiza uma lista de tarefa
   "difficult": 0,
   "category": "breakfast",
   "startDate": "13-08-2023",
-  "dueDate" : "13-08-2023",
+  "dueDate" : "13-08-2023"
 }
 ```
 
