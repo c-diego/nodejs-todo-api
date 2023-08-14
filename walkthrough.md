@@ -9,7 +9,7 @@
 5. Definir dependências necessárias 
 
 ## Mão na massa
-1. Instalar dependências e dependências de dev
+1. Instalar dependências
 2. Realizar configurações de projeto
 3. Criar e configurar servidor
 4. Criar as rotas
