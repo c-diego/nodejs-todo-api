@@ -4,7 +4,7 @@ API para lista de tarefas. Uma API REST feita em NODE + TYPESCRIPT.
 ## Rotas
 GET `/api/tasks` -> Recupera todas as listas de tarefas  
 GET `/api/tasks/:task` -> Recupera uma única lista de tarefas  
-GET `/api/tasks?duedate=YYYY-MM-DD` -> Recupera todas as listas de tarefa por data    
+GET `/api/tasks?duedate=DD-MM-YYYY` -> Recupera todas as listas de tarefa por data    
 DELETE `/api/tasks/:task` -> Deleta uma lista de tarefa  
 POST `/api/tasks` -> Adiciona uma lista de tarefas  
 PUT `/api/tasks/:task/complete` -> Finaliza uma tarefa  
